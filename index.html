@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XSu Personal Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .cover-image {
+            background-image: url("Cover-Image-2.jpg");
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: CoverAnime 3s ease-in-out;
+        }
+        @keyframes CoverAnime {
+            0% {opacity: 0}
+            100% {opacity: 1}
+        }
+        .center-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .headshot {
+            flex-shrink: 0;
+            margin: 20px;
+            height: calc(150px + 6vw);
+            width: calc(150px + 6vw);
+            border: calc(8px + 0.2vw) solid transparent;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            background-size: cover;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        .headshot-2 {
+            border-radius: 50%;
+            background-image: url("Profile-Image.jpg"), linear-gradient(to bottom right, #ff3cac, #221E27, #2b86c5);
+        }
+        .bgGrad {
+            height: 100%;
+            background-color: #2D2938;
+            background-image: linear-gradient(#39323E, white);
+        }
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cover-image">
+    <div class="center-container">
+        <div class="headshot headshot-2"></div>
+        <h1 style="color: azure; font-family: 'Dancing Script', cursive; text-align: center">XSu</h1>
+    </div>
+</div>
+
+<div class="container-fluid bgGrad" style="padding: 50px 30px 0px">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2 style="color: azure; font-family: 'Redressed', cursive; padding-left: 10px">Bookmark</h2>
+            <ul class="nav nav-pills flex-column sticky" style="font-family: 'Raleway', sans-serif; font-size: 20px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#habits" style="color: #C5AED6">My habits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Past" style="color: #C5AED6">My past experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact" style="color: #C5AED6">Contact Me!</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8">
+            <h2 style="color: azure; font-family: 'Redressed', cursive;">My Story</h2>
+            <h5 style="font-family: 'Dancing Script', cursive; color: white;">Well, I am a student from PolyU studying Applied Mathematics. What I really do is trying to solve crazy problems using theorems I even don't know the names. Oh, on the other hand, try to prove facts like 1+1=2.</h5>
+            <h3 style="font-family: 'Redressed', cursive; color: #FFDEA1" id="habits">Habits & Interests</h3>
+            <div style="font-family: 'Dancing Script', cursive; font-size: 22px">
+                <ul style="list-style-type: circle;">
+                    <li>Piano</li>
+                    <li>Diving</li>
+                    <li>Gaming</li>
+                    <li>Running</li>
+                    <li>Anime</li>
+                </ul>
+            </div>
+            <h3 style="font-family: 'Redressed', cursive; color: #FFDEA1" id="Past">Past Experience</h3>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 22px">My hometown is in Qingdao, a coastal city in Northern China. After graduating from a local high school, I decided to pursue further study in Hong Kong.</p>
+            <br>
+            <div>
+                <img src="QingDao.jpg" class="img-fluid rounded" alt="Qingdao">
+                <p>Jiaozhou Bay Bridge lying over the distance sea, taken in Licang District, Qingdao by myself on 13/03/2021</p>
+            </div>
+            <br>
+            <h3 style="font-family: 'Redressed', cursive;" id="Contact">Contact Me!</h3>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 22px">contact me at <a href="mailto: meteor112358@gmail.com" style="text-decoration: none">meteor112358@gmail.com</a> if needed!</p>
+            <br>
+        </div>
+    </div>
+    <h5 style="font-family: 'Redressed', cursive; text-align: center; padding-top: 10px" id="Past">Thank You For Viewing!</h5>
+    <br>
+    <br>
+</div>
+
+</body>
+</html>
